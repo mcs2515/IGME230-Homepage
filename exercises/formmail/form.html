@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Form Page</title>
+	</head>
+
+	<body>
+        <form method="POST" action="formmail.php" name="myform">
+		<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+		<input type="hidden" name="recipients" value="mcs2515@rit.edu" />
+		<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+		<input type="hidden" name="subject" value="Sample FormMail Testing" />
+		<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+		<input type="hidden" name="mail_options" value="Exclude=email;realname" />
+          <fieldset>
+            <legend>Personal information:</legend>
+              <br>
+            Full Name:<br>
+            <input type="text" name="FullName" value="" required><br>     
+            Email Address: <br>
+              <input type="email" name="EmailAddr" required placeholder="Enter a valid email address" required>
+              <br>
+              <br>
+            Gender: <br>
+              <input name="gender" type="radio" /> Male <br>
+              <input name="gender" type="radio" /> Female <br>
+              <input name="gender" type="radio" /> Other <br>
+            
+              <br>    
+            Current Household Pet(s): <br>
+            <input name="cat" type="checkbox"/>
+              Cat
+            <input name="dog" type="checkbox"/>
+              Dog
+            <input name="Bird" type="checkbox"/>
+              Bird
+            <input name="Fish" type="checkbox"/>
+              Fish
+              <br>
+              <br>
+            All-Time Favorite Drink: <br>
+              <input name="drink" type="radio" /> Coffee
+              <input name="drink" type="radio" /> Tea
+              <input name="drink" type="radio" /> Soda
+              <input name="drink" type="radio" /> Water
+              <input name="drink" type="radio" /> Wine
+              <input name="drink" type="radio" /> Beer
+              
+              <br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+    </body>
+</html>

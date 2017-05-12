@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Megan's Image Rollovers</title>
+
+		<style type="text/css">
+			
+			body{
+				font: 16px arial, helvetica, sans-serif;
+			}
+		
+			#toucan {
+				display: block;
+				width: 190px;
+				height: 90px;
+				background-image: url(images/toucan.jpg);
+				text-indent: -999em;
+				border:  2px solid black;
+				position: relative;
+				margin-left: 10px;
+				border-radius: 50px;
+			}
+			
+			a#toucan:after {
+				content: "";
+				display: block;
+				width: 190px;
+				height: 90px;
+				background: url(images/toucan2.jpg) bottom;
+				position: absolute;
+				border-radius: 50px;
+				top: 0;
+				opacity: 0;
+				-webkit-transition: .5s;
+				transition: 1s;
+			}
+
+			a#toucan:hover:after {
+				opacity: 1;
+			}
+			
+			#button {
+				display: block;
+				width: 101px;
+				height: 50px;
+				background-image: url(images/button.jpg);
+				text-indent: -999em;
+				margin-left: 60px;
+				border-radius: 10px;
+			}
+			
+			a#button:hover {
+				background-position: bottom;
+			}		
+			
+			p{
+				margin-left: 15px;
+			}
+		</style>
+	</head>
+	
+
+	<body>
+		<br>
+		<p> Hover and click over the button </p>
+		<br>
+		<p><a href="index.html" id="button"> Button</a></p>	
+		<br>
+		<p> Hover and click over the image </p>
+		<p><a href="http://images7.memedroid.com/images/UPLOADED7/544e4996f048f.jpeg" id="toucan"> Toucan</a></p>		
+
+	</body>	
+</html>

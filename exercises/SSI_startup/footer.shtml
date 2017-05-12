@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>SSI Demonstration</title>
+</head>
+<body>
+    <h5 id= "copyright" >&copy; Copyright 2016 <br>Megan Smith</h5>
+    <p><!--#echo var="DATE_LOCAL"--></p>
+</body>
+</html>

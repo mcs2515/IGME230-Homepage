@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">	
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Megan's Responsive Background</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<style type="text/css">
+			body {
+				background-repeat: no-repeat;
+				background-image: url('images/img_smallflower.jpg');
+				font-weight: bold;
+			}
+
+			#navcontainer ul{
+				padding-left: 0;
+				margin-top: 210px;
+				color: White;
+				float: left;
+				width: 100%;
+				font-family: arial, helvetica, sans-serif;
+			}
+
+			#navcontainer2{
+				display: none;
+			}
+
+			#navcontainer ul li { display: inline; }
+
+			#navcontainer ul li a
+			{
+				padding: 0.2em 1em;
+				color: dimgrey;
+				text-decoration: none;
+				float: left;
+				border-right: 1px solid #fff;
+			}
+
+			#navcontainer ul a:hover
+			{
+			color: #fff;
+			background-color: DimGrey;
+			}
+
+			@media only screen and (min-width: 400px) {
+				body { 
+				   background-image: url('images/img_flowers.jpg'); 
+				}
+				
+				#navcontainer ul{
+					margin-top: 355px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="navcontainer">
+			<ul id="nivlist">
+			<li id="home"><a href="index.html">Main Menu</a></li>
+			<li><a href="responsive.html">Responsive Images</a></li>
+			</ul>
+		</div>
+	</body>
+		
+</html>

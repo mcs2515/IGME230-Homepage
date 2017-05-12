@@ -1,0 +1,4 @@
+ErrorDocument 404 /mcs2515/230/error/error.html
+
+DirectoryIndex noterror.html
+

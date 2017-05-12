@@ -1,0 +1,104 @@
+
+body{
+	position:relative;
+	margin: 0 auto;
+	background-color: Gainsboro;
+	font-family: serif;
+	min-width: 700pt;
+	max-width:1000pt;
+}
+
+#homepage{
+	font-size: 350%;
+	font-weight:bold;
+	text-align:center;
+	background-color:#F08080;
+	padding: 10pt 0pt 10pt 0pt;
+	
+}
+
+#meBox{
+	
+}
+
+h2{
+	font-size: 19pt;
+	font-weight:bold;
+	padding-left: 20pt;
+	margin-top: 50pt;
+	text-decoration: underline;
+}
+
+#aboutMe{
+	position:relative;
+	margin-top: 30pt;
+	text-indent:25pt;
+	padding-left: 20pt;
+	font-size: 18pt;
+}
+
+#favorites{
+	display:none;
+	
+}
+
+#links{	
+	position: relative;	
+}
+
+h3{
+	background-color:#F08080;
+	padding: 10pt 30pt 0pt 10pt;
+	padding-left: 20pt;	
+	margin-top:5pt;
+	text-decoration: underline;
+	font-size: 16pt;
+}
+
+div.projects, div.ice{
+	position:relative;
+	border: 2pt solid Black;
+	background-color: #F8F8FF;
+	width: 90%;
+	padding: 5pt 0pt 5pt 15pt;
+	margin-left: 3%;
+	font-size: 18pt;
+}
+a{
+	text-decoration: none;
+}
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    display:none;
+}
+
+/* mouse over link */
+a:hover {
+    display:none;
+}
+
+/* selected link */
+a:active {
+    display:none;
+}
+
+div.img{
+	border: 3pt solid Black;
+	padding: 5pt 5pt 5pt 5pt;
+	background: white;
+	float: right;	
+	margin-left: 20pt;
+	margin-right:32pt;
+}
+
+div.desc{
+	display: none;	
+}
+
+div.copyright{
+	display:none;
+}

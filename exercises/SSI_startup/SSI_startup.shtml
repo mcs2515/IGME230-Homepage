@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SSI Demonstration</title>
+</head>
+<body>
+	<!--#include virtual="header.shtml"-->
+	<h1>Server-side Include Demonstration</h1>
+	<h2>The last time this file was updated was:</h2>
+	<p><!--Replace this line with your command(s)-->
+        <!--#flastmod file="SSI_startup.shtml"--></p>
+	<hr />
+	<h2>The Current Environment is:</h2>
+	<p><!--Replace this line with your command(s)-->
+        <!--#printenv--></p>
+		<!--#include virtual="footer.shtml"-->
+</body>
+</html>

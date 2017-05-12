@@ -1,0 +1,72 @@
+.menu{
+    background-color: pink;
+    border: dotted  white;
+    max-height: 1em;
+    width: 200px;
+    overflow: hidden;
+    padding: 5pt;
+    float: left;
+    margin-right: 10pt;
+    border-radius: 5pt;
+	transition: max-height 1s ease-in-out;
+}
+
+p{
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-bottom: 5pt;
+}
+
+.menu:hover{
+    max-height: 999px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    margin-left: -20pt;
+}
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: mediumpurple;
+}
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: aliceblue;
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: hotpink;
+}

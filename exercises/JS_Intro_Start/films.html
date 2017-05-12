@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8" />
+	<title>Megan's Movies</title>
+	
+	<style type="text/css">
+	h1,h2{
+		font-family:verdana,tahoma,sans-serif;
+	}
+	body{
+		margin-left: 10px;
+		margin-right: 10px;
+		background-color:#999;
+	}
+	
+	#content{
+		background-color:#ddd;
+		padding: 3px 10px 3px 10px;
+		width:225px;
+	}
+	footer{
+		display:block;
+		color:gray;
+		text-align:center;
+	}
+	</style>
+	
+	<script>
+		function init(){
+			var myH1 = document.querySelector("h1");
+			myH1.innerHTML="Films!!!!!!!";
+			myH1.style.color="red";
+			myH1.style.backgroundColor="yellow";
+			
+			// when the #redButton is clicked, call the makeRed() function
+			var redButton = document.querySelector("#redButton");
+			redButton.onclick = makeRed;
+            
+            var itButton = document.querySelector("#itButton");
+			itButton.onclick = makeItalicize;
+
+			
+			var myFooter=document.querySelector("footer");
+			myFooter.innerHTML="Copyright 2013 Megan Smith";
+			
+			var myP= document.querySelector("p");
+			myP.innerHTML="Welcome to Megan’s Page!”";
+			
+			document.querySelector("h1").setAttribute("title", "title creates tool tips");
+			document.querySelector("a").setAttribute("href", "https://www.bing.com/");
+		}		
+		window.onload = init;
+		
+		function makeRed(){
+			document.querySelector("body").style.backgroundColor = "red";
+		}
+        
+        function makeItalicize(){
+			document.querySelector("h1").style.fontStyle = "italic";
+		}
+		
+	</script>
+
+	</head>
+	
+	<body>
+		<div id="content">
+			<h1>Movies!</h1>
+			
+			<p>Welcome to my movie page!</p>
+			<button id="redButton">Make red</button>
+			<button id="itButton">Italicize</button>
+			<h2>My favorite's!</h2>
+			<ul>
+			<li>Adaptation</li>
+			<li>Birdemic</li>
+			<li>Care Bears</li>
+			</ul>
+			<p><a id="changeLink" href="http://www.google.com">go to Google</a></p>
+			<p><a  href="simple_calculator_start.html">Simple Calculator</a></p>
+			<p><a  href="hp_calculator_start.html">Harry Potter Calculator</a></p>
+			<footer>Copyright 2013 Nobody</footer>
+		</div>	
+	</body>
+</html>

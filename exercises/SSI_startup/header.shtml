@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SSI Demonstration</title>
+</head>
+<body>
+	<header>
+    <h2> Date: </h2>
+        <p><!--#config timefmt="%B %d, %Y" -->
+            Today is <!--#echo var="DATE_LOCAL" --></p>
+    <h2> My IP Adress: </h2>
+        <p><!--#echo var="REMOTE_ADDR"--></p>
+    <h2> Server IP Adress: </h2>
+        <p><!--#echo var="SERVER_ADDR"--></p>
+    </header>
+</body>
+</html>

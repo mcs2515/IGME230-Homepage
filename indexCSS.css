@@ -1,0 +1,183 @@
+
+body{
+	position:relative;
+	margin: 0 auto;
+	background-color: Gainsboro;
+	font-family: Arial, san-serif;
+	max-width:1000px;
+	min-width: 600px;
+}
+
+#homepage{
+	font-size: 350%;
+	font-weight:bold;
+	text-align:center;
+	background-color:#F08080;
+	padding: 10px 0px 10px 0px;	
+}
+
+#box{
+	background-color: rgba(248, 248, 255, 0.6);
+}
+
+h2{
+	font-weight:bold;
+	padding-left: 40px;
+}
+
+div.photoBox{
+	border: 8px solid Pink;
+	padding: 5px 5px 5px 5px;
+	background: white;
+	float: right;	
+	width:300px;
+	margin: 0px 30px 15px 15px;
+}
+
+#desc{
+	text-align: center;
+	font-style: italic;
+	font-size: 90%;
+	padding: 5px 15px 0px 15px;		
+}
+	
+p{
+	text-indent:2%;
+	padding-left: 35px;
+}
+
+#favorites{
+    margin-left: 3.5%;
+}
+
+#meBox{
+    padding-bottom: 100pt;
+}
+
+h3{
+	background-color:#F08080;
+	padding: 10px 0px 10px 30px;
+}
+
+#projects, #classEx{
+    position: relative;
+    margin: 0 auto;
+	background-color: #F8F8FF;
+	width: 90%;
+	padding: 15px 0px 10px 25px;
+	border: 5px solid Pink;
+    margin-top: 30pt;
+    margin-bottom: 30pt;
+}
+
+#b1, #b2, #b3{
+	width: 120px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: mediumpurple;
+}
+
+div.copyright{
+	text-align:center;
+    padding-bottom: 10pt;
+    margin-bottom: 40pt;
+    margin-top: 6%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+	body{		
+	   max-width:90%;
+	   min-width: 320px;
+    }
+	
+	h2{
+	   text-align: center;
+	}
+    
+    #meBox{
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 20pt;
+    }
+    
+    p{
+        text-indent: 7pt;
+        padding-left: 15pt;  
+        padding-right: 15pt;  
+    }
+    
+	div.photoBox{		
+	   text-align: center;
+	   width: 80%;
+	   height:80%;
+	   vertical-align:bottom;
+	   margin-bottom: 20px;	
+	   float: none;
+	   margin-left: auto;
+	   margin-right: auto;
+	}
+	
+	#cat{		
+	   width: 100%;
+	   height:100%;		
+	}
+		
+	#homepage{
+	   font-size: 200%;
+	   padding: 10px 0px 10px 0px;	
+	}
+	
+	#links{
+	   margin-top: -10px;
+	   text-align: center;
+	}
+	
+	#proj1, #proj2, #proj3, .ice 
+    {
+        margin-bottom: 10px;
+        background-color: #F8F8FF;
+        width: 90%;
+        border: 5px solid Pink;
+        padding: 20px 0px 20px 0px;
+        font-size: 125%;
+	}
+    
+	h2, h3{
+	   padding-left: 0px;
+	}
+	
+	#projects, #classEx{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        background-color: transparent;
+        border: transparent;
+	}	
+    
+    .copyright p{
+        text-indent: 0pt;
+        padding-left: 0pt;
+    }
+}
